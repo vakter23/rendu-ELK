@@ -1,12 +1,8 @@
-# ELK Demo
+# ELK Rendu projet 
 
-This little repository is linked to the following light talk: [Suivre son activité avec une stack ELK](https://docs.google.com/presentation/d/1iNAxMmW7tp6p_tqDKqbjXWWat2i3nIMsxofLzf1YF0E/edit?usp=sharing) [FR].
+This repository is inspired by the work of [labynocle/elk-demo](https://github.com/labynocle/elk-demo).
 
-The aim of this repository is to have a basic and simple way to play with Kibana and some data.
-
-This repository is inspired by the work of [deviantony/docker-elk](https://github.com/deviantony/docker-elk).
-
-Random data have been generated thanks to [Mockaroo](https://www.mockaroo.com)
+Data have been generated thanks to [PokeAPI](https://pokeapi.co)
 
 ## Compose the stack
 
@@ -19,33 +15,25 @@ The suggested stack is composed by:
 
 ## Requirements
 
-You just need to have:
+Vous devez être sur une machine Linux et avoir :
 * [docker](https://docs.docker.com/engine/installation/linux/)
-
+* [Python](https://python.org)
 
 ## How to use it?
 
-It's pretty simple to launch the full stack:
+Pour lancer la stack il faut éxecuter les commandes suivantes :
 ```bash
 cd elk-demo
 sudo docker compose up
 ```
 
-Then you just need to inject data:
+Puis il faux éxecuter le script:
 ```bash
-nc localhost 5000 < data/random_data.json
+chmod +x scriptELK.sh
+./scriptELK.sh
 ```
 
-Finally browse on:
+Puis il faut :
 * http://127.0.0.1:9000 to manage the created index (just choose to connect to `http://elasticsearch:9200`)
 * http://127.0.0.1:5601 to start to play with Kibana
 
-
-## Videocast
-
-... coming soon I hope ...
-
-
-## Restore a given Kibana config
-
-... coming soon I hope ...
