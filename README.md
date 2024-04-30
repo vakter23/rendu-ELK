@@ -17,7 +17,7 @@ The suggested stack is composed by:
 
 Vous devez être sur une machine Linux et avoir :
 * [docker](https://docs.docker.com/engine/installation/linux/)
-* [Python](https://python.org)
+* [Python](https://python.org) (Veuillez importer la librairie **requests** et **json**)
 
 ## How to use it?
 
@@ -27,13 +27,16 @@ cd elk-demo
 sudo docker compose up
 ```
 
-Puis il faux éxecuter le script:
+Ensuite il faux éxecuter le script BASH :
 ```bash
-chmod +x scriptELK.sh
-./scriptELK.sh
+chmod +x scriptAutomatisation.sh
+./scriptAutomatisation.sh
 ```
 
 Puis il faut :
 * http://127.0.0.1:9000 to manage the created index (just choose to connect to `http://elasticsearch:9200`)
 * http://127.0.0.1:5601 to start to play with Kibana
 
+## Introduction
+Notre groupe est composé de Théo RENIER et Volkan AKTER.
+L'objectif de notre projet est d'automatiser la récupération de Pokemon depuis l'API [PokeAPI](https://pokeapi.co) puis de l'intégrer dans Kibana pour créer des visualisations sur les caractéristiques des pokemons.
