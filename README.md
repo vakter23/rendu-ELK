@@ -95,3 +95,32 @@ for i in range(1,1025):
 	with open(f"pokemons/data{i}.json", 'w') as f:
 		json.dump(pokemon_data, f)
 ```
+
+## Logstash
+On a configuré le logstash pour seulement supprimé le champs ***message***.
+```bash
+input {
+	tcp {
+		port => 5000
+	}
+}
+
+filter {
+	json {
+		source => "message"
+	}
+	date {
+		match => [ "[date]", "ISO8601" ]
+		target => "[date]"
+		timezone => "UTC"
+	}
+	mutate{
+		remove_field => [ "message" ]
+	}
+}
+output {
+	elasticsearch {
+		hosts => "elasticsearch:9200"
+	}
+}
+```
