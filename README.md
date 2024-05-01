@@ -148,3 +148,18 @@ output {
 
 ### Notre Dashboard
 <img width="1887" alt="Capture" src="https://github.com/vakter23/rendu-ELK/assets/60293356/fa724ac3-76ec-483b-a8c5-feea769dabc3">
+
+## Améliorations possibles
+On peut améliorer plusieurs points dans notre projet :
+1. Essayer de passer qu'un seul appel à L'API par Pokemon.
+Pour éviter d'avoir deux fichiers tampons JSON récupérés il ne faudrait effectuer qu'une seule requête pour avoir toutes les informations.
+2. Améliorer la vitesse de génération de chaque fichier.
+Générer chaque fichier prend du temps car il y a une boucle en python, il faudrait déployer une boucle pour chaque génération.
+3. Personnaliser notre script pour qu'on puisse choisir les pokemons qu'on veut ajouter.
+Pour l'instant il est seulement possible de générer dans une tranche de pokemon via leur numéro d'identifiant, il faudrait pouvoir rajouter une option pour choisir via des paramètres précis (par exemple avec la génération).
+4. Organiser la gestion des fichiers générés.
+Pour l'instant chaque fichier est généré dans un dossier avec le nom dataNUMERO.json, il faudrait plutôt un dossier par génération et le nom des fichiers devrait avoir le nom du pokemon+.json
+5. Pour la mise en echelle.
+Il faudrait un service qui exécute le script tous les X temps définis par l'utilisateur, et il faudrait avoir des fonctions sémaphores pour exécuter les requêtes vers l'API et pour envoyer les fichiers.
+
+
