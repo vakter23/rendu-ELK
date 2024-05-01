@@ -124,3 +124,6 @@ output {
 	}
 }
 ```
+## Schema explicitant toute la chaîne data
+![Q3](https://github.com/vakter23/rendu-ELK/assets/60293356/0fd7e6df-dc38-4184-bfa9-c297594e4938)
+
