@@ -127,3 +127,24 @@ output {
 ## Schema explicitant toute la chaîne data
 ![Q3](https://github.com/vakter23/rendu-ELK/assets/60293356/0fd7e6df-dc38-4184-bfa9-c297594e4938)
 
+## Screenshots des visualisations
+### Le nombre de pokemon par générations
+<img width="1887" alt="Capture0" src="https://github.com/vakter23/rendu-ELK/assets/60293356/fd26d4e5-bb9d-4b58-96cc-f4a545cb51b9">
+
+### Le nombre de pokemon par types
+<img width="1849" alt="Capture1" src="https://github.com/vakter23/rendu-ELK/assets/60293356/3a339817-0405-41d1-8fb5-5521e4c561d0">
+
+### Le nombre de type de pokemon selon la génération
+<img width="1883" alt="Capture2" src="https://github.com/vakter23/rendu-ELK/assets/60293356/b5761072-2130-404a-90c2-0948e30c8510">
+
+### Le poids moyen de tous les pokemons (en hectogrammes)
+<img width="1238" alt="Capture3" src="https://github.com/vakter23/rendu-ELK/assets/60293356/08eb7a99-8292-44aa-8e06-112ed107046c">
+
+### La taille moyenne de tous les pokemons (en décimètres)
+<img width="1212" alt="Capture4" src="https://github.com/vakter23/rendu-ELK/assets/60293356/3cec3eb5-3cb3-4845-a7d2-8a311ce5de20">
+
+### Les types les plus présents parmis les pokémons qui ont deux types
+<img width="1886" alt="Capture5" src="https://github.com/vakter23/rendu-ELK/assets/60293356/6187bccb-00f6-4e3b-9dc7-9605eacdd218">
+
+### Notre Dashboard
+<img width="1887" alt="Capture" src="https://github.com/vakter23/rendu-ELK/assets/60293356/fa724ac3-76ec-483b-a8c5-feea769dabc3">
